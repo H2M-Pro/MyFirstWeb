@@ -1,6 +1,12 @@
-body{
+*{
+    box-sizing:border-box;
+}
+html,body{
     margin:0; 
     background-color: #11284d;
+    /* background-image: url("myimg\meOnpc1.jpg"); */
+    scroll-behavior: smooth;
+    /* overflow-x:hidden; */
     }
      .header1{
         display: flex;
@@ -18,7 +24,7 @@ body{
         left:20px;
      }
     nav{
-    height:50px;
+    height:70px;
     display:flex;
     margin-left:auto;
     gap:20px;
@@ -37,7 +43,6 @@ body{
 
     }
     .logoimg{
-        
         width: 100px;
         height:50px;
         border-radius:20px;
@@ -45,24 +50,23 @@ body{
     }
     .navlinks{
         display: flex;
-        justify-content: center;
+        justify-content:space-between;
         align-items: center;
-        gap:clamp(10px, 2vw, 30px);
+        gap:clamp(100px, 2vw, 30px);
         font-family: arial,sans-serif;
-         font-size: 1.2rem;
-         /* color: white; */
+         font-size: 1.5rem;
             color: rgb(79, 137, 230);
 
          padding:10px 10px 5px 10px;
     }
     .accounticondiv{
-        margin-left:50px;
+        /* margin-left:50px; */
             display: flex;
             justify-content:flex-end;
     }
     #accounticon{
-        width:30px;
-        height:30px;
+        width:40px;
+        height:40px;
         color: rgb(94, 121, 170);
         border-radius: 50px;
         border: 3px solid rgb(22, 97, 184);
@@ -136,18 +140,20 @@ body{
         align-items:center;
         font-size: 0.9rem;
         font-family:arial,sans-serif;
-        width: 100%;
-        margin: 30px;
-        flex-wrap: wrap;
+        padding:20px;
+        margin:0;
+        /* blackground-color:red; */
     }
     .discriptions{
         justify-content:left;
+
         align-items:center;
         font-size: 0.9rem;
         font-family:arial,sans-serif;
         width: 70%;
-        margin-left: 2%;
+        margin-left:30px;
         flex-wrap: wrap;
+       /* background-image: url("myimg\meOnpc1.jpg"); */
     }
     .webtitle{
         justify-content: center;
@@ -218,6 +224,7 @@ body{
             border-radius:20px;
             height: 50px;
             width: 300px;
+            /* width: 90%; */
             display:flex;
             justify-content: center;
             font-size: 2rem;
