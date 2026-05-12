@@ -93,6 +93,9 @@ html,body{
         border: #f6f7fa solid 3px;
         box-shadow: 0px 4px 10px;
     }
+    .accounticondiv{
+    position: relative;
+}
     #usericon:hover{
         color: #6280b1;
         border: #274596;
@@ -100,14 +103,46 @@ html,body{
         border: #2b59d8;
         box-shadow: 0px 4px 10px;
     }
-    a{
+    .accMenu{
+        background-color: #0b183b;
+        display:none;
+        position:absolute;
+        font-size: 1rem;
+        color: rgb(19, 21, 26);
+        border-radius: 10px 10px 10px 15px;
+        box-shadow:2px 6px 10px 5px #112355;
+        height: 200px;
+        width: 200px;
+        /* justify-content: center;
+        align-items: center; */
+        padding:30px;
+        top: 44px;
+        right: 10px;
+        /* transition: 0.3s; */
+    }
+    .profmenu{
+    text-decoration:none;
+    color:#55ebff;
+    font-size:1rem;
+    /* display:block; */
+    padding:10px;
+    border-radius:8px;
+    transition:0.3s;
+    justify-content: center;
+    align-items: center;
+}
+.profmenu:hover{
+    background-color:#274596;
+    color:white;
+}
+   #a{
         text-decoration: none;
         cursor: pointer;
         color: white;
         border-bottom: none;
          transition: all 0.3s ease;
     }
-    a:hover{
+    #a:hover{
         color: rgb(255, 255, 255);
         text-shadow: 1px 2px 6px rgb(255, 255, 255); 
         border-bottom: #274596 solid 2px;  
