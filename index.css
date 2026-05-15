@@ -3,7 +3,8 @@
 }
 html,body{
     margin:0; 
-    background-color: #11284d;
+    background-color:#122352;
+background-position: center;
     /* background-image: url("myimg\meOnpc1.jpg"); */
     scroll-behavior: smooth;
     /* overflow-x:hidden; */
