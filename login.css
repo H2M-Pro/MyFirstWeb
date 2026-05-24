@@ -4,8 +4,10 @@
     /* url("bgimg/bubles2.jpg"); */
     /* url("bgimg/bluebubbles.jpg"); */
     url("bgimg/blueeee.jpg");
+
     background-size: cover;
     color: aliceblue;
+    /* background-color:rgba(6, 36, 121, 0.76); */
      }
 .maindiv{
     box-shadow: 3px 2px 1px 2px;
@@ -53,3 +55,18 @@ a{
     color: blueviolet;
     font-weight: bold;
 }
+#passwordmsg{
+    display:none;
+    color: red;
+}
+#passwordmsg.show{
+    display: inline;
+}
+#usermsg{
+    display: none;
+    color: red;
+}
+#usermsg.show{
+    display: inline;
+}
+

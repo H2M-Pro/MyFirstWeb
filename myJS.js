@@ -17,7 +17,6 @@ usericon.addEventListener("click", (event) => {
         accMenu.style.display = "none";
     }
     else{
-
         accMenu.style.display = "block";
     }
 });
@@ -28,5 +27,4 @@ document.addEventListener("click", (event) => {
     ){
         accMenu.style.display = "none";
     }
-
 });

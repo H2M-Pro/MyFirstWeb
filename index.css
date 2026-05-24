@@ -15,6 +15,7 @@ html,body{
        background-blend-mode: darken;
        /* background-position: center; */
     scroll-behavior:smooth;
+    scroll-padding-top: 100px;
     /* overflow-x:hidden; */
     }
      .header1{
@@ -36,20 +37,22 @@ html,body{
     height:70px;
     display:flex;
     margin-left:auto;
-    gap:20px;
+    gap:7px;
     justify-content:space-between;
     align-items:center;
     background-color:#0b183be7;
     padding:10px 10px 10px 10px;
     position:sticky;
+    flex-grow: 1;
+    /* flex-wrap: wrap; */
+    flex-basis: 200;
     top:0;
     right:0;
-    left: 20px;;
+    left: 20px;
     z-index:999;
     }
     /* .logodiv{
         justify-content: flex-start;
-
     }
     .logoimg{
         width: 100px;
@@ -83,9 +86,9 @@ html,body{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        gap:clamp(100px, 2vw, 30px);
+        gap:clamp(90px, 2vw, 30px);
         font-family: arial,sans-serif;
-         font-size: 1.5rem;
+         font-size: 1.1rem;
             color: rgb(79, 137, 230);
 
          padding:10px 10px 5px 10px;
@@ -129,7 +132,7 @@ html,body{
     .profmenu{
     text-decoration:none;
     color:#55ebff;
-    font-size:1rem;
+    font-size:0.9rem;
     padding:10px;
     border-radius:8px;
     transition:0.3s;
@@ -142,6 +145,7 @@ html,body{
 }
    #a{
         text-decoration: none;
+        background-color: #0d274d;
         cursor: pointer;
         color: white;
         border-bottom: none;
@@ -165,6 +169,12 @@ html,body{
         width: 350px;
         border-radius: 300px;  
     }
+    /* @media(max-width: 500px){
+     .myimgdiv{
+        height: auto;
+        width: 50px;
+     }   
+    } */
     .myimgdiv::before{
         content: "";
         position: absolute;
@@ -187,7 +197,7 @@ html,body{
     }
     .myimg1{
         position:relative;
-        height: 56vh;
+        height:56vh;
         width:330px;
         border-radius: 400px;
         z-index: 1;
@@ -196,6 +206,7 @@ html,body{
         100%{
             transform: rotate(360deg);
         }
+
     }
     .img_descptions{
         display: flex;
@@ -220,22 +231,17 @@ html,body{
         margin-left:50px;
         flex-wrap: wrap;
         border-radius: 20px;
-       /* background-image: 
-       linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
-       url("bgimg/bg4.jpg");
-       background-size: cover;
-       background-position: center; */
     }
     .webtitle{
         justify-content: center;
-        color:rgb(79, 137, 230);
-        font-size: 3rem;
+        color:rgba(253, 254, 255, 0.74);
+        font-size: 3.3rem;
         font-weight:bold;
-        text-shadow: 1px 1px 5px rgb(32, 25, 71);
+        text-shadow: 1px 1px 5px rgb(98, 84, 179);
       font-family:arial,sans-serif;
     
     }
-    @media(max-width: 768px){
+    @media(max-width: 900px){
         nav{
             top: 0;
             left:0;
@@ -248,12 +254,21 @@ html,body{
         .img_descptions{
             flex-direction: column;
             text-align: center;
+            width: 96vw;
+            height: 125vh;
+        }
+        .myimgdiv{
+            width: 75vw;
+            height: 60vh;
+            /* scale: 1 1; */
+            
         }
         .animateddiv{
             width: 100%;
+            /* height: 300vh; */
         }
         .webtitle{
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
     }
     .skillslist{
@@ -300,11 +315,11 @@ html,body{
             color:white;
             border-radius:20px;
             height: 50px;
-            width: 300px;
+            width: 200px;
             /* width: 90%; */
             display:flex;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 1.9rem;
             outline: none;
             border: 0 solid;
             box-shadow: 2px 2px 9px rgb(79, 137, 230);
