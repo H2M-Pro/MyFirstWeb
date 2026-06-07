@@ -15,7 +15,7 @@ html,body{
        background-blend-mode: darken;
        /* background-position: center; */
     scroll-behavior:smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 70px;
     /* overflow-x:hidden; */
     }
      .header1{
@@ -380,7 +380,7 @@ html,body{
         color:rgb(79, 137, 230);
         text-shadow: 1px 1px 5px rgb(32, 25, 71);
         font-family:arial,sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.9rem;
         font-family:arial,sans-serif;
         font-weight: bold;
     }
@@ -399,7 +399,14 @@ html,body{
         .services{
         /* justify-content: center; */
         align-items: center;
-        height:fit-content;
+        /* height:fit-content; */
+        min-height: calc(150vh -90px);
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin-top:-35.0px; */
         font-size: 10rem;
         font-family:arial,sans-serif;
         background:linear-gradient(270deg,#11284d);
@@ -539,6 +546,9 @@ html,body{
 footer{
     color:antiquewhite;
     text-align: center;
-    background-color: #183072;
+    background:linear-gradient(#183175f1,#20304b,#0d274d,#181d2c);
+    font-family: 'Times New Roman', Times, serif;
+    height: 40px;
+    padding: 10px;
 }
    
