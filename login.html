@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -9,7 +12,7 @@
 <body>
     <div class="maindiv">
         <form action="">            
-                <h1>Do You have an Acount?</h1>
+                <h1>Do You have an Account?</h1>
                 <label for="username">Username</label>
                 <input type="text" name="" id="username" class="inputs" placeholder="Enter You name here">
                 <span id="usermsg">Username Not Found</span>
@@ -23,7 +26,10 @@
                 <br><br>
                 <span>Don't have an account?
                     <a href="signup.html">Sign-Up</a>
-                </span>
+                </span> <br> <br> <br> <br>
+                <button class="backhome" onclick="window.location.href='mainpage.html'">
+                <i class="fa-solid fa-house"></i> <br>Home
+                </button>
         </form>
     </div>
     <script>
@@ -32,9 +38,7 @@
         const passkey=document.getElementById('pk').value;
         const passwordmsg=document.getElementById('passwordmsg');
     passwordmsg.classList.toggle("show", passkey!=="1234");
-    
     username.classList.toggle("show",username!=="H2M");
-
     // if(username=="" && passkey==""){
     // alert('FILL ALL THE FIELDS');
     // }
@@ -42,7 +46,6 @@
     // alert('DONE LOGIN')
     // }
         // alert('Me again');
-
         }
     </script>
 </body>
