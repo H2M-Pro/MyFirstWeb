@@ -11,41 +11,87 @@
 </head>
 <body>
     <div class="maindiv">
-        <form action="">            
+        <form>            
                 <h1>Do You have an Account?</h1>
                 <label for="username">Username</label>
-                <input type="text" name="" id="username" class="inputs" placeholder="Enter You name here">
+                <input type="text" name="" id="username" class="inputs" placeholder="Enter You name here" required> <br>
                 <span id="usermsg">Username Not Found</span>
+                <span id="emptymsg">Field Required</span>
+
                 <br> <br>
                 <label for="password">Password</label>
                 <input type="password" name="" id="pk" class="inputs" placeholder="Enter You Password" required> <br>
-                <span id="passwordmsg">The password is incorrect</span>
-                <br> <br> <br>
+                <span id="passwordmsg">The password is incorrect</span> 
+                <span id="emptymsg1">Field Required</span>
+                <br> <br>
                 <button type="button" class="btn" onclick="signIn()">Sign In</button> <br><br>
                 <span><a href="resetpass.html">Forget Password Click Here?</a></span>
                 <br><br>
                 <span>Don't have an account?
                     <a href="signup.html">Sign-Up</a>
-                </span> <br> <br> <br> <br>
-                <button class="backhome" onclick="window.location.href='mainpage.html'">
-                <i class="fa-solid fa-house"></i> <br>Home
-                </button>
+                </span> <br>
+                <div id="msgdiv">
+                    <span id="donemsg">Login Successful</span> <br>
+                     <span id="incorrectpkUser">The username or password is invalid</span>
+                </div>
         </form>
-    </div>
+    </div> 
     <script>
+function clearMessages() {
+    document.getElementById('msgdiv').classList.remove('show');
+
+    document.getElementById('donemsg').classList.remove('show');
+    document.getElementById('incorrectpkUser').classList.remove('show');
+
+    document.getElementById('usermsg').classList.remove('show');
+    document.getElementById('passwordmsg').classList.remove('show');
+
+    document.getElementById('emptymsg').classList.remove('show');
+    document.getElementById('emptymsg1').classList.remove('show');
+}
+const usernameInput = document.getElementById('username');
+const passwordInput = document.getElementById('pk');
+
+usernameInput.addEventListener('input', clearMessages);
+passwordInput.addEventListener('input', clearMessages);
    function signIn(){
-     const username=document.getElementById('username').value;
-        const passkey=document.getElementById('pk').value;
-        const passwordmsg=document.getElementById('passwordmsg');
-    passwordmsg.classList.toggle("show", passkey!=="1234");
-    username.classList.toggle("show",username!=="H2M");
-    // if(username=="" && passkey==""){
-    // alert('FILL ALL THE FIELDS');
+clearMessages();
+    let username=document.getElementById('username').value;
+    let passkey=document.getElementById('pk').value;
+    // checking for empty username
+    if(username===""){
+       document.getElementById('emptymsg').classList.add('show');
+    }
+    if(passkey===""){
+   document.getElementById('emptymsg1').classList.add('show');
+    }
+   if(username==="" || passkey===""){
+   return;//this immediately stops function
+}
+    //checking if the password length is less than 6 characters
+    // else if(passkey.length<6){
+    //     document.getElementById('msgdiv').classList.add('show');
+    //     document.getElementById('pklenmsg').classList.add('show');
     // }
-    // else{
-    // alert('DONE LOGIN')
-    // }
-        // alert('Me again');
+    // checking if the username and password are incorrect
+    else if(username!=="H2M" && passkey!=="1234"){
+        document.getElementById('msgdiv').classList.add('show');
+        document.getElementById('incorrectpkUser').classList.add('show');
+    }
+    //checking if the username is incorrect
+    else if(username!=="H2M"){
+        document.getElementById('msgdiv').classList.add('show');
+        document.getElementById('usermsg').classList.add('show');
+    }
+    //checking if the password is incorrect
+    else if(passkey!=="1234"){
+        document.getElementById('msgdiv').classList.add('show');
+        document.getElementById('passwordmsg').classList.add('show');
+    }
+    else{
+        document.getElementById('msgdiv').classList.add('show');
+        document.getElementById('donemsg').classList.add('show');
+    }
         }
     </script>
 </body>

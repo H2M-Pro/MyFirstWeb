@@ -71,7 +71,7 @@ a{
 @media screen and (max-width: 768px) {
     .maindiv{
         width: 80%;
-        height: 70vh;
+        height: 80vh;
     }
     .inputs{
         width: 90%;
@@ -80,15 +80,15 @@ a{
         font-size: 1.5rem;
     }
     span{
-        font-size:1.3rem;
+        font-size:1.4rem;
     }
     .btn{
         width: 50%;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
-    .backhome{
+    /* .backhome{
         width: 50%;
         font-size: 1.7rem;
         border-radius:100px;
-    }
+    } */
 }
