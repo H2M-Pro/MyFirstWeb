@@ -20,7 +20,9 @@
 
                 <br> <br>
                 <label for="password">Password</label>
-                <input type="password" name="" id="pk" class="inputs" placeholder="Enter You Password" required> <br>
+                <input type="password" name="" id="pk" class="inputs" placeholder="Enter You Password" required>
+                <i class="fa-solid fa-eye" id="eye" onclick="showHidePassword()"></i>
+                <br>
                 <span id="passwordmsg">The password is incorrect</span> 
                 <span id="emptymsg1">Field Required</span>
                 <br> <br>
@@ -93,6 +95,19 @@ clearMessages();
         document.getElementById('donemsg').classList.add('show');
     }
         }
+    //function to show and hide password by click eyeicon
+    function showHidePassword(){
+        let password=document.getElementById('pk');
+        let eye=document.getElementById('eye');
+        if(password.type==="password"){
+            password.type="text";
+            eye.className="fa-solid fa-eye-slash";
+        }
+        else{
+            password.type="password";
+            eye.className="fa-solid fa eye";
+        }
+    }
     </script>
 </body>
 </html>

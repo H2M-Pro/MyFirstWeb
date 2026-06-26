@@ -167,8 +167,8 @@ html,body{
     }
     .myimg1{
         position:relative;
-        height:56vh;
-        width:330px;
+        height:50vh;
+        width:30%;
         border-radius: 400px;
         z-index: 1;
     }
@@ -181,8 +181,8 @@ html,body{
         display: flex;
         justify-content:center;
         align-items:center;
-        font-size: 0.9rem;
-        font-family:arial,sans-serif;
+        /* font-size: 0.9rem; */
+        /* font-family:arial,sans-serif; */
         padding:min(5em,5%);
         margin:0;
     }
@@ -192,17 +192,17 @@ html,body{
         align-items:center;
         font-size: 0.9rem;
         font-family:arial,sans-serif;
-        width: 64%;
+        width: 80%;
         height: 65vh;
         margin-top: -0.9%;
         margin-left:50px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         border-radius: 20px;
     }
     .webtitle{
         justify-content: center;
         color:rgba(253, 254, 255, 0.74);
-        font-size: 3.3rem;
+        font-size: 2.9rem;
         font-weight:bold;
         text-shadow: 1px 1px 5px rgb(98, 84, 179);
         font-family:arial,sans-serif;
@@ -238,14 +238,6 @@ html,body{
         .webtitle{
             font-size: clamp(2rem,4vw,3rem);     
         }
-    }
-    .skillslist{
-        list-style-type:"💙";
-        color:white;
-        font-size: 1.2rem;
-       font-family:arial,sans-serif;
-        font-weight: bold;
-        padding: (2em,2%);
     }
     .animateddiv{
         display: flex;
@@ -285,6 +277,7 @@ html,body{
             width: 200px;
             display:flex;
             justify-content: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 1.9rem;
             outline: none;
             border: 0 solid;
@@ -295,36 +288,9 @@ html,body{
         .getstartedbtn:hover{
             transform: translateY(-5px) scale(1.03);
             background-color: transparent;
-            color: white;
+            color: rgb(77, 210, 50);
             box-shadow: 2px 2px 9px rgb(255, 255, 255);
         } 
-    .panel1{
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-size: 3rem;
-        font-family:arial,sans-serif;
-        background:linear-gradient(270deg,#11284d);
-        top: 55px;
-    }
-    .panel2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-size: 3rem;
-       font-family:arial,sans-serif;
-        background-color:#11284d;
-    }
-    .panel3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-size: 3rem;
-        font-family:arial,sans-serif;
-        background-color: aquamarine;
-    }
     #text{
         color:rgb(79, 137, 230);
         text-shadow: 1px 1px 5px rgb(32, 25, 71);
